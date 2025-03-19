@@ -1,5 +1,8 @@
 package com.example.mycode;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Ned {
 
 	// fn = （fn-1）+ (fn-2)
@@ -15,7 +18,7 @@ public class Ned {
 
 	public static void main(String[] args) {
 		int step = step(10);
-		System.out.println(step);
+		log.info("step = {}", step);
 	}
 
 
